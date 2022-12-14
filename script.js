@@ -7,21 +7,21 @@ const list = document.querySelector('#list');
 
 
 function outputData() {
-dataList.forEach(e => {
-  let li = document.createElement('li');
-  li.innerHTML += e;
-  list.append(li);
-});
+    dataList.forEach(e => {
+        let li = document.createElement('li');
+        li.innerHTML += e;
+        list.append(li);
+    });
 }
 outputData();
 
 sortBtn.addEventListener('click', () => {
-list.innerHTML = '';
+    list.innerHTML = '';
 
-dataList.sort();
+    dataList.sort();
 
-outputData();
+    outputData();
 
-sortBtn.style.display = 'none';
-hr.style.display = 'none';
+    sortBtn.style.display = 'none';
+    hr.style.display = 'none';
 });
